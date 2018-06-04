@@ -9,10 +9,10 @@ import { HandleDataService } from '../handle-data.service';
 export class ListDataComponent implements OnInit {
 
   values  = [];
-  constructor(private HandleDataService : HandleDataService) { }
+  constructor(private handleDataService: HandleDataService) { }
 
   ngOnInit() {
-    this.values = this.HandleDataService.getData();
+    this.values = this.handleDataService.getData();
   }
 
 }
